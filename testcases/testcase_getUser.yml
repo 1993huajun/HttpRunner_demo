@@ -1,0 +1,11 @@
+- config:
+    name: 获取用户名
+    base_url: ${ENV(host)}
+
+- test:
+    name: 获取用户名
+    api: api/api_getUser.yml
+    variables:
+        username: "gump"
+    validate:
+        - contains: [content.url, "gump"]

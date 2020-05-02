@@ -1,0 +1,9 @@
+name: 获取用户名
+base_url: ${ENV(host)}
+variables:
+    username: "daloga"
+request:
+    method: GET
+    url: ${ENV(cityQuery_para)}
+    params:
+        userName: $username
