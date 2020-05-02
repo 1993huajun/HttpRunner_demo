@@ -2,8 +2,10 @@ name: 获取用户名
 base_url: ${ENV(host)}
 variables:
     username: "daloga"
+    password: "123"
 request:
     method: GET
     url: ${ENV(cityQuery_para)}
     params:
         userName: $username
+        password: $password

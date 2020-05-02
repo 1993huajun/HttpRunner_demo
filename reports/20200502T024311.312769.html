@@ -155,11 +155,11 @@
   <table id="summary">
     <tr>
       <th>START AT</th>
-      <td colspan="4">2020-05-02T02:24:03.421489</td>
+      <td colspan="4">2020-05-02T02:43:11.312769</td>
     </tr>
     <tr>
       <th>DURATION</th>
-      <td colspan="4">1.411 seconds</td>
+      <td colspan="4">0.620 seconds</td>
     </tr>
     <tr>
       <th>PLATFORM</th>
@@ -205,7 +205,7 @@
     <tr id="record_1_1">
       <th class="success" style="width:5em;">success</th>
       <td colspan="2">获取用户名</td>
-      <td style="text-align:center;width:6em;">1398.38 ms</td>
+      <td style="text-align:center;width:6em;">611.17 ms</td>
       <td class="detail">
 
         
@@ -228,19 +228,10 @@
                 <table>
                   
                     <tr>
-                      <th>method</th>
-                      <td>
-                        
-                            GET
-                        
-                      </td>
-                    </tr>
-                  
-                    <tr>
                       <th>url</th>
                       <td>
                         
-                            http://postman-echo.com/get?userName=gump
+                            http://postman-echo.com/get?password=9876&userName=gump
                         
                       </td>
                     </tr>
@@ -250,11 +241,20 @@
                       <td>
                         
                             <pre>{
-  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
   &#34;Accept&#34;: &#34;*/*&#34;,
-  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;,
-  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;User-Agent&#34;: &#34;python-requests/2.22.0&#34;
 }</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
                         
                       </td>
                     </tr>
@@ -276,34 +276,72 @@
                       </tr>
                     
                       <tr>
-                        <th>body</th>
+                        <th>ok</th>
                         <td>
                           
-                            
-                              <pre>{
-  &#34;args&#34;: {
-    &#34;userName&#34;: &#34;gump&#34;
-  },
-  &#34;url&#34;: &#34;https://postman-echo.com/get?userName=gump&#34;,
-  &#34;headers&#34;: {
-    &#34;user-agent&#34;: &#34;python-requests/2.22.0&#34;,
-    &#34;x-forwarded-proto&#34;: &#34;https&#34;,
-    &#34;accept-encoding&#34;: &#34;gzip, deflate&#34;,
-    &#34;host&#34;: &#34;postman-echo.com&#34;,
-    &#34;x-forwarded-port&#34;: &#34;80&#34;,
-    &#34;accept&#34;: &#34;*/*&#34;
-  }
-}</pre>
-                            
+                            True
                           
                         </td>
                       </tr>
                     
                       <tr>
-                        <th>ok</th>
+                        <th>status_code</th>
                         <td>
                           
-                            True
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://postman-echo.com/get?password=9876&userName=gump
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Server&#34;: &#34;nginx&#34;,
+  &#34;Content-Length&#34;: &#34;206&#34;,
+  &#34;Date&#34;: &#34;Sat, 02 May 2020 02:43:07 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json; charset=utf-8&#34;,
+  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;ETag&#34;: &#34;W/\&#34;120-tTh+WlnivVTuHFuHEEqqpYb0JfM\&#34;&#34;,
+  &#34;set-cookie&#34;: &#34;sails.sid=s%3AXBtdYTOeRgaHBgvVckwNeZG2rv56fazv.GI6dim1MpYHN736WLuO0L7k7zjE3DqO1XwNRCEyRxRE; Path=/; HttpOnly&#34;,
+  &#34;Content-Encoding&#34;: &#34;gzip&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;url&#34;: &#34;https://postman-echo.com/get?password=9876&amp;userName=gump&#34;,
+  &#34;headers&#34;: {
+    &#34;accept&#34;: &#34;*/*&#34;,
+    &#34;accept-encoding&#34;: &#34;gzip, deflate&#34;,
+    &#34;user-agent&#34;: &#34;python-requests/2.22.0&#34;,
+    &#34;x-forwarded-port&#34;: &#34;80&#34;,
+    &#34;host&#34;: &#34;postman-echo.com&#34;,
+    &#34;x-forwarded-proto&#34;: &#34;https&#34;
+  },
+  &#34;args&#34;: {
+    &#34;password&#34;: &#34;9876&#34;,
+    &#34;userName&#34;: &#34;gump&#34;
+  }
+}</pre>
+                            
                           
                         </td>
                       </tr>
@@ -327,47 +365,10 @@
                       </tr>
                     
                       <tr>
-                        <th>status_code</th>
-                        <td>
-                          
-                            200
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>url</th>
-                        <td>
-                          
-                            http://postman-echo.com/get?userName=gump
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
                         <th>cookies</th>
                         <td>
                           
-                            {'sails.sid': 's%3AYKIbCHS6gKVQpNqBApK1fRUziBwBRXGR.2zhnfngrOyMD575N%2Fkh0ZRKOdn6NBJwsfKKiNPQhmK0'}
-                          
-                        </td>
-                      </tr>
-                    
-                      <tr>
-                        <th>headers</th>
-                        <td>
-                          
-                            <pre>{
-  &#34;set-cookie&#34;: &#34;sails.sid=s%3AYKIbCHS6gKVQpNqBApK1fRUziBwBRXGR.2zhnfngrOyMD575N%2Fkh0ZRKOdn6NBJwsfKKiNPQhmK0; Path=/; HttpOnly&#34;,
-  &#34;ETag&#34;: &#34;W/\&#34;100-8IipBLddYsN5h5DOO3K31TX0jc8\&#34;&#34;,
-  &#34;Connection&#34;: &#34;keep-alive&#34;,
-  &#34;Server&#34;: &#34;nginx&#34;,
-  &#34;Vary&#34;: &#34;Accept-Encoding&#34;,
-  &#34;Content-Type&#34;: &#34;application/json; charset=utf-8&#34;,
-  &#34;Content-Encoding&#34;: &#34;gzip&#34;,
-  &#34;Content-Length&#34;: &#34;185&#34;,
-  &#34;Date&#34;: &#34;Sat, 02 May 2020 02:23:59 GMT&#34;
-}</pre>
+                            {'sails.sid': 's%3AXBtdYTOeRgaHBgvVckwNeZG2rv56fazv.GI6dim1MpYHN736WLuO0L7k7zjE3DqO1XwNRCEyRxRE'}
                           
                         </td>
                       </tr>
@@ -395,8 +396,8 @@
                         content.url
                       </td>
                       <td>contains</td>
-                      <td>gump</td>
-                      <td>https://postman-echo.com/get?userName=gump</td>
+                      <td>LazyString($username)</td>
+                      <td>https://postman-echo.com/get?password=9876&amp;userName=gump</td>
                     </tr>
                     
                 </table>
@@ -411,15 +412,15 @@
                 <table>
                   <tr>
                       <th>content_size(bytes)</th>
-                      <td>256</td>
+                      <td>288</td>
                     </tr>
                   <tr>
                     <th>response_time(ms)</th>
-                    <td>1398.38</td>
+                    <td>611.17</td>
                   </tr>
                   <tr>
                     <th>elapsed(ms)</th>
-                    <td>395.059</td>
+                    <td>608.514</td>
                   </tr>
                 </table>
               </div>

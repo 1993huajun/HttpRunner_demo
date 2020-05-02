@@ -1,0 +1,8 @@
+config:
+    name: 获取用户信息
+
+testcases:
+    获取用户名:
+        testcase: testcases/testcase_getUser.yml
+        parameters:
+            username-password: ${P(data/user_pwd.csv)}
