@@ -7,7 +7,7 @@
     api: api/api_getUser.yml
     variables:
         username: "gump"
-        password: "9876"
+        password: "9876543"
     validate:
         - contains: [content.url, $username]
     setup_hooks:
