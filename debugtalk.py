@@ -1,7 +1,7 @@
 # -- coding: utf-8 --
 import requests
 import os
-import time
+# import time
 # from MysqlUtil import MyMySQL
 # import Sql
 from time import sleep
