@@ -3,8 +3,8 @@ import hashlib
 import os
 
 cf = configparser.ConfigParser()
-cfp = os.path.dirname(os.path.abspath(__file__)) + "\\config.ini"
-
+cfp = os.path.dirname(os.path.abspath(__file__)) + "/conf.ini"
+print(cfp)
 
 class CommonConfig(object):
 
