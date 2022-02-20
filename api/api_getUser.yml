@@ -1,11 +1,12 @@
 name: 获取用户名
-base_url: ${ENV(host)}
+
 variables:
-    username: "daloga"
+    username: "qtracer"
     password: "123"
+    uri: ${get_cf(url, cityQuery_para)}
 request:
     method: GET
-    url: ${ENV(cityQuery_para)}
+    url: ${get_host()}/$uri
     params:
         userName: $username
         password: $password
