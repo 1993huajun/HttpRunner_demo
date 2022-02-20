@@ -1,6 +1,9 @@
 import sys
-
+import os
 from httprunner.cli import main
+
+sys.path[0] = os.path.dirname(__file__)
+
 from config.common_config import CommonConfig
 
 cmd = sys.argv.pop(1)
