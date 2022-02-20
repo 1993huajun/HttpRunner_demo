@@ -1,6 +1,5 @@
 - config:
     name: 获取用户名
-    base_url: ${ENV(host)}
 
 - test:
     name: 获取用户名

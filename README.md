@@ -1,9 +1,9 @@
-# 浣跨敤
-python3 main-hrun.py hrun <testcase or path> <appoinost>
+# 使用
+python3 main-hrun.py hrun {testcase or path} {appointedHost}
 
-# 渚嬪瓙
-## 鎵цrelease鐜鎸囧畾api
+# 例子
+## 执行release环境指定api
 python3 main-hrun.py hrun api/api_getUser.yml release
 
-## 鎵цqa鐜testcases鏂囦欢澶逛笅鎵�鏈夌殑鐢ㄤ緥
+## 执行qa环境testcases文件夹下所有的用例
 python3 main-hrun.py hrun testcases/ qa
