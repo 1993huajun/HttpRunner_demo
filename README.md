@@ -1,9 +1,17 @@
-# 使用
+# 浣跨敤
+```Python3
 python3 main-hrun.py hrun {testcase or path} {appointedHost}
+# main-hrun.py涓篢estDeploy榛樿鎵ц鍏ュ彛锛岃TestDeploy閰嶇疆鏂囦欢ini/config.ini
+# 鍏朵粬绗﹀悎HttpRunner2.X瑙勮寖
+```
 
-# 例子
-## 执行release环境指定api
+# 渚嬪瓙
+## 鎵цrelease鐜鎸囧畾api
+```Python3
 python3 main-hrun.py hrun api/api_getUser.yml release
+```
 
-## 执行qa环境testcases文件夹下所有的用例
+## 鎵цqa鐜testcases鏂囦欢澶逛笅鎵�鏈夌殑鐢ㄤ緥
+```Python3
 python3 main-hrun.py hrun testcases/ qa
+```
